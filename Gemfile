@@ -4,6 +4,7 @@ ruby '2.1.2'
 gem 'rails', '4.1.1'
 
 gem 'devise', '~>3.1.0.rc2'
+gem 'paperclip', '~>4.0'
 
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
