@@ -11,7 +11,7 @@
         <p><strong><%= @pin.user.name if @pin.user%></strong></p>
       </div>
       <div class="panel-footer">
-        <% if @pin.user == current_user %>
+        <% if @pin.user == (current_user && !nil) %>
           <%= link_to edit_pin_path(@pin) do%>
               <span class='glyphicon glyphicon-edit'></span> | 
           <% end %>
