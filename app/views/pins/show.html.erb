@@ -13,7 +13,10 @@
       <div class="panel-footer">
         <% if @pin.user == current_user %>
           <%= link_to edit_pin_path(@pin) do%>
-              <span class='glyphicon glyphicon-edit'></span>
+              <span class='glyphicon glyphicon-edit'></span> | 
+          <% end %>
+          <%= link_to @pin, method: :delete, data: { confirm: 'Are you sure?' } do %>
+            <span class='glyphicon glyphicon-trash'></span>
           <% end %>
         <% end %>
       </div>
